@@ -1,19 +1,15 @@
-import React, { lazy, Suspense } from 'react';
-import { importMDX } from 'mdx.macro';
-import { EditLink } from '../components';
-
-const Content = lazy(() => importMDX('./Sources.doc.mdx'));
+import React from "react";
+import { EditLink } from "../components";
+import SourcesMDX from "./Sources.doc.mdx";
 
 const Sources = () => {
   return (
-    <>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Content />
-      </Suspense>
+    <div>
+      <SourcesMDX />
 
       <EditLink fileLocation="pages/Sources.doc.mdx" />
-    </>
-  )
-}
+    </div>
+  );
+};
 
 export default Sources;
