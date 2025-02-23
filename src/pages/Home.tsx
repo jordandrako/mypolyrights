@@ -11,7 +11,6 @@ const components = {
 const Home = () => {
   return (
     <div>
-      Test Coolify
       <HomeMDX components={components} />
       <EditLink fileLocation="pages/Home.doc.mdx" />
     </div>
